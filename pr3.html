@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Class Timetable</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th, td {
+            border: 2px solid #000;
+            padding: 10px;
+            text-align: center;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .blue { background-color: #57c4e5; }
+        .yellow { background-color: #ffe451; }
+        .orange { background-color: #ffe073; }
+        .green { background-color: #adf1a7; }
+        .lightyellow { background-color: #fff8d0; }
+        .grey { background-color: #d7dadb; }
+        .lightgreen { background-color: #d2e1b4; }
+    </style>
+</head>
+<body>
+    <table>
+        <tr>
+            <th>Time/Day</th>
+            <th>I<br>08:50-09:40</th>
+            <th>II<br>09:40-10:30</th>
+            <th>III<br>10:40-11:30</th>
+            <th>IV<br>11:30-12:20</th>
+            <th>V<br>12:20-1:10</th>
+            <th>VI<br>1:10-2:00</th>
+        </tr>
+        <tr>
+            <th>Monday</th>
+            <td colspan="2" class="blue">
+                25EC151<br>(HT,US)<br>Bhabha Block I Floor (BH-115)
+            </td>
+            <td class="yellow">25HUI02<br>(NY)<br>RJ-201</td>
+            <td class="orange">25AS102<br>(AA)<br>RJ-201</td>
+            <td class="blue">25EC101<br>(HT)<br>RJ-201</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Tuesday</th>
+            <td class="green">25ME101<br>(MYK)<br>RJ-205</td>
+            <td class="orange">25AS102<br>(AA)<br>RJ-205</td>
+            <td class="lightgreen">25HUI01<br>(SPT)<br>RJ-205</td>
+            <td></td>
+            <td class="lightyellow">25CS151<br>(ASH)<br>RJ-205</td>
+            <td></td>
+        </tr>
+        <tr>
+            <th>Wednesday</th>
+            <td class="blue">25EC101<br>(HT)<br>RJ-205</td>
+            <td class="lightgreen">25HUI01<br>(SPT)<br>RJ-205</td>
+            <td class="green">25ME101<br>(MYK)<br>RJ-205</td>
+            <td class="grey">25VA151<br>(MN)<br>RJ-205</td>
+            <td></td>
+            <td rowspan="5" style="writing-mode:vertical-rl; background:#fff;">LUNCH</td>
+        </tr>
+        <tr>
+            <th>Thursday</th>
+            <td class="orange">25AS102<br>(AA)<br>RJ-302</td>
+            <td class="green">25ME101<br>(MYK)<br>RJ-302</td>
+            <td class="lightgreen" colspan="2">25HUI51<br>(SPT,BCH)<br>KC Block V Floor (KC-510)</td>
+            <td class="blue">25EC101<br>(HT)<br>RJ-205</td>
+        </tr>
+        <tr>
+            <th>Friday</th>
+            <td class="grey">25VA151<br>(MN)<br>RJ-205</td>
+            <td class="lightgreen">25HUI01<br>(SPT)<br>RJ-205</td>
+            <td class="lightyellow">25AS101<br>(AA)<br>RJ-205</td>
+            <td class="lightyellow">25CS101<br>(ASH)<br>RJ-205</td>
+            <td class="lightyellow">25CS101<br>(ASH)<br>RJ-205</td>
+        </tr>
+    </table>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hotel Room Booking Form</title>
+    <style>
+        body { font-family: Arial, sans-serif; background: #f4f4f4; }
+        .container { max-width: 500px; margin: 40px auto; background: #fff; padding: 24px; border-radius: 8px; box-shadow: 0 0 8px #aaa; }
+        h2 { color: #B22222; text-align: center; }
+        label { display: block; margin-top: 14px; }
+        input, select, textarea, button { width: 100%; padding: 8px; margin-top: 6px; border-radius: 4px; border: 1px solid #ccc; }
+        button { background: #B22222; color: #fff; border: none; cursor: pointer; margin-top: 18px; }
+        button:hover { background: #8A1C1C; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>Hotel Room Booking Form</h2>
+        <form>
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="checkin">Check-in Date:</label>
+            <input type="date" id="checkin" name="checkin" required>
+
+            <label for="checkout">Check-out Date:</label>
+            <input type="date" id="checkout" name="checkout" required>
+
+            <label for="roomtype">Room Type:</label>
+            <select id="roomtype" name="roomtype" required>
+                <option value="">Select Room Type</option>
+                <option value="single">Single</option>
+                <option value="double">Double</option>
+                <option value="suite">Suite</option>
+            </select>
+
+            <label for="requests">Special Requests:</label>
+            <textarea id="requests" name="requests" rows="3"></textarea>
+
+            <button type="submit">Book Now</button>
+            <button type="reset">Reset</button>
+        </form>
+    </div>
+</body>
+</html>

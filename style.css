@@ -1,0 +1,35 @@
+div.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    gap: 10px;
+    height: 100vh;
+    width: 100vw;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: rgb(255, 255, 255);
+}
+.item1{
+    height: 100px;
+    background-color: rgb(156, 31, 31);
+}
+.item2{
+    height: 100px;
+    background-color: rgb(27, 206, 11);
+}
+.item3{
+    height: 100px;
+    background-color: rgb(26, 202, 105);
+}
+.item4{
+    height: 100px;
+    background-color: rgb(146, 146, 88);
+}
+.item5{
+    height: 100px;
+    background-color: rgb(209, 83, 102);
+}
+.item6{
+    height: 100px;
+    background-color: rgb(110, 8, 56);
+}

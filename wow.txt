@@ -1,0 +1,855 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 6 - Product Page</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Online Store - Product Page</h1>
+
+    <div class="product-card">
+        <img src="https://cdn.mos.cms.futurecdn.net/fsDKHB3ZyNJK6zMpDDBenB-1200-80.jpg" alt="Sample Product" class="product-image">
+
+        <h2 class="product-name">Wireless Headphones</h2>
+        <p class="product-desc">
+            High quality wireless headphones with noise cancellation and long battery backup.
+        </p>
+
+        <p class="product-price">Price: ₹1,999</p>
+
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+</body>
+</html>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+   background-color: #f4f4f4;                 
+    margin: 0;
+    padding: 20px;
+}
+div{
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.title {
+    text-align: center;                        
+    color: #b30000;                          
+    font-size: 32px;                           
+    margin-bottom: 30px;                        
+}
+.product-card {
+    width: 350px;                             
+    background-color: #ffffff;
+    border: 2px solid #393939;                  
+    padding: 20px;                             
+    margin: 0 auto;                            
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.product-image {
+    width: 100%;                               
+    height: 200px;                             
+    border: 1px solid #cccccc;                 
+    object-fit: cover;
+    margin-bottom: 15px;                       
+}
+.product-name {
+    color: #222222;
+    font-size: 24px;
+    margin: 10px 0;                             
+}
+.product-desc {
+    color: #555555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.product-price {
+    color: #008000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.buy-btn {
+    background-color: #ff6600;               
+    color: #ffffff;
+    border: 2px solid #cc5200;                
+    padding: 10px 20px;                         
+    font-size: 16px;                           
+    cursor: pointer;
+}
+.buy-btn:hover {
+    background-color: #cc5200;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">My Website</h1>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
+<section class="content">
+    <h2>Welcome</h2>
+    <p>This is sample content below the  navigation bar.</p>
+</section>
+
+</body>
+</html>
+
+
+
+
+.header {
+    background-color: #111;
+    padding: 10px 0;
+    color: #fff;
+}
+.logo {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+}
+.nav {
+    background-color: #222;      
+}
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    float: left;                 
+}
+.nav-list a {
+    display: inline-block;     
+    padding: 12px 20px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+.nav-list a:hover {
+    background-color: #444;
+}
+.clear {
+    clear: both;                
+}
+.content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment - Flexbox Student Profile Card</title>
+
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <h2>Student Profile Cards</h2>
+    <div class="container">
+        <div class="card">
+            <div class="avatar">VM</div>
+            <div class="name">Vishal Mishra</div>
+            <div class="detail">B.Tech -ELCE</div>
+            <div class="detail">Roll No: 2025B02310047</div>
+            <div class="detail">1st Year</div>
+        </div>
+        <div class="card">
+            <div class="avatar">VG</div>
+            <div class="name">Vansh Goel</div>
+            <div class="detail">B.Tech -ELCE</div>
+            <div class="detail">Roll No: 21IT1012</div>
+            <div class="detail">1st Year</div>
+        </div>
+        <div class="card">
+            <div class="avatar">RK</div>
+            <div class="name">Rohit Kumar</div>
+            <div class="detail">B.Tech - ECE</div>
+            <div class="detail">Roll No: 21EC1009</div>
+            <div class="detail">1st Year</div>
+        </div>
+    </div>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;}
+h2 {
+    text-align: center;}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; }
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center
+    padding: 16px;}
+.avatar {
+    width: 70px;
+    height: 70px;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 auto 12px;}
+.name {
+    font-weight: bold;
+    font-size: 18px;}
+.detail {
+    font-size: 14px;
+    color: #555555;
+    margin: 2px 0;}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <h2>Responsive Product Grid</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71cflgAolqL._SY695_.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>High-quality item with great features.</p>
+            <p class="price">₹499</p>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41V22K7ad-L._SY300_SX300_QL70_FMwebp_.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Durable and stylish for daily use.</p>
+            <p class="price">₹799</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS0RagZtzlvtgIrCfbxeorYkU8lIN2vdEIrHO1aV8Wa5ytWm-K7x_AIROF3LXTMwa3VLUtGdvQF4HRhctOsZgJ1Y5Q0F3tC4Ts7Lq7KqUG9GMUw2H-x6BjO6MTtvt22MMLvLexDTZhidw4&usqp=CAc" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Lightweight and comfortable.</p>
+            <p class="price">₹1,299</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTwdAUGbZhwPcprxbFUDqKCGW_cvDcwz9_vVrGW8HfQzOXz-2nFf7CG77FxeWx7MIlECkI4GhfW_6ExIpusQTeVP6OXRHxrVcvpqNBfZDHwY-M-WlzzCi6fUJcxvwXztsmh2B7rDwg&usqp=CAc" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Trendy design with premium quality.</p>
+            <p class="price">₹999</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #555555;
+    margin: 4px 0;
+}
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Navbar</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="actions">
+            <a href="#">Cart</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <section>
+        <h1>Welcome to ShopEase!</h1>
+        <p>Your one-stop destination for all shopping needs.</p>
+    </section>
+</body>
+</html>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 15px 20px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.actions a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .actions {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 1025px) {
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Experiment 6 - Product Page</title>
+
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1 class="title">Online Store - Product Page</h1>
+
+    <div class="product-card">
+        <img src="https://cdn.mos.cms.futurecdn.net/fsDKHB3ZyNJK6zMpDDBenB-1200-80.jpg" alt="Sample Product" class="product-image">
+
+        <h2 class="product-name">Wireless Headphones</h2>
+        <p class="product-desc">
+            High quality wireless headphones with noise cancellation and long battery backup.
+        </p>
+
+        <p class="product-price">Price: ₹1,999</p>
+
+        <button class="buy-btn">Add to Cart</button>
+    </div>
+
+</body>
+</html>
+
+body {
+    font-family: Arial, Helvetica, sans-serif;  
+   background-color: #f4f4f4;                 
+    margin: 0;
+    padding: 20px;
+}
+div{
+    margin-bottom: 40px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.title {
+    text-align: center;                        
+    color: #b30000;                          
+    font-size: 32px;                           
+    margin-bottom: 30px;                        
+}
+.product-card {
+    width: 350px;                             
+    background-color: #ffffff;
+    border: 2px solid #393939;                  
+    padding: 20px;                             
+    margin: 0 auto;                            
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+.product-image {
+    width: 100%;                               
+    height: 200px;                             
+    border: 1px solid #cccccc;                 
+    object-fit: cover;
+    margin-bottom: 15px;                       
+}
+.product-name {
+    color: #222222;
+    font-size: 24px;
+    margin: 10px 0;                             
+}
+.product-desc {
+    color: #555555;
+    line-height: 1.4;
+    margin-bottom: 15px;
+}
+.product-price {
+    color: #008000;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+.buy-btn {
+    background-color: #ff6600;               
+    color: #ffffff;
+    border: 2px solid #cc5200;                
+    padding: 10px 20px;                         
+    font-size: 16px;                           
+    cursor: pointer;
+}
+.buy-btn:hover {
+    background-color: #cc5200;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+
+<header class="header">
+    <h1 class="logo">My Website</h1>
+    <nav class="nav">
+        <ul class="nav-list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Gallery</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="clear"></div>
+    </nav>
+</header>
+<section class="content">
+    <h2>Welcome</h2>
+    <p>This is sample content below the  navigation bar.</p>
+</section>
+
+</body>
+</html>
+
+
+
+
+.header {
+    background-color: #111;
+    padding: 10px 0;
+    color: #fff;
+}
+.logo {
+    margin: 0;
+    padding-left: 20px;
+    font-size: 24px;
+}
+.nav {
+    background-color: #222;      
+}
+.nav-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.nav-list li {
+    float: left;                 
+}
+.nav-list a {
+    display: inline-block;     
+    padding: 12px 20px;
+    color: #f5f5f5;
+    text-decoration: none;
+    font-family: Arial, sans-serif;
+}
+.nav-list a:hover {
+    background-color: #444;
+}
+.clear {
+    clear: both;                
+}
+.content {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experiment - Flexbox Student Profile Card</title>
+
+    <link rel="stylesheet" href="style8.css">
+</head>
+<body>
+    <h2>Student Profile Cards</h2>
+    <div class="container">
+        <div class="card">
+            <div class="avatar">VM</div>
+            <div class="name">Vishal Mishra</div>
+            <div class="detail">B.Tech -ELCE</div>
+            <div class="detail">Roll No: 2025B02310047</div>
+            <div class="detail">1st Year</div>
+        </div>
+        <div class="card">
+            <div class="avatar">VG</div>
+            <div class="name">Vansh Goel</div>
+            <div class="detail">B.Tech -ELCE</div>
+            <div class="detail">Roll No: 21IT1012</div>
+            <div class="detail">1st Year</div>
+        </div>
+        <div class="card">
+            <div class="avatar">RK</div>
+            <div class="name">Rohit Kumar</div>
+            <div class="detail">B.Tech - ECE</div>
+            <div class="detail">Roll No: 21EC1009</div>
+            <div class="detail">1st Year</div>
+        </div>
+    </div>
+</body>
+</html>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    background: #f9f9f9;}
+h2 {
+    text-align: center;}
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap; }
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 220px;
+    text-align: center
+    padding: 16px;}
+.avatar {
+    width: 70px;
+    height: 70px;
+    background: #007bff;
+    color: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    margin: 0 auto 12px;}
+.name {
+    font-weight: bold;
+    font-size: 18px;}
+.detail {
+    font-size: 14px;
+    color: #555555;
+    margin: 2px 0;}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Product Grid</title>
+    <link rel="stylesheet" href="style9.css">
+</head>
+<body>
+    <h2>Responsive Product Grid</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/71cflgAolqL._SY695_.jpg" alt="Product 1">
+            <h3>Product 1</h3>
+            <p>High-quality item with great features.</p>
+            <p class="price">₹499</p>
+        </div>
+        <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41V22K7ad-L._SY300_SX300_QL70_FMwebp_.jpg" alt="Product 2">
+            <h3>Product 2</h3>
+            <p>Durable and stylish for daily use.</p>
+            <p class="price">₹799</p>
+        </div>
+
+        <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcS0RagZtzlvtgIrCfbxeorYkU8lIN2vdEIrHO1aV8Wa5ytWm-K7x_AIROF3LXTMwa3VLUtGdvQF4HRhctOsZgJ1Y5Q0F3tC4Ts7Lq7KqUG9GMUw2H-x6BjO6MTtvt22MMLvLexDTZhidw4&usqp=CAc" alt="Product 3">
+            <h3>Product 3</h3>
+            <p>Lightweight and comfortable.</p>
+            <p class="price">₹1,299</p>
+        </div>
+        <div class="card">
+            <img src="https://encrypted-tbn3.gstatic.com/shopping?q=tbn:ANd9GcTwdAUGbZhwPcprxbFUDqKCGW_cvDcwz9_vVrGW8HfQzOXz-2nFf7CG77FxeWx7MIlECkI4GhfW_6ExIpusQTeVP6OXRHxrVcvpqNBfZDHwY-M-WlzzCi6fUJcxvwXztsmh2B7rDwg&usqp=CAc" alt="Product 4">
+            <h3>Product 4</h3>
+            <p>Trendy design with premium quality.</p>
+            <p class="price">₹999</p>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f5f5f5;
+    padding: 20px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.card {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    text-align: center;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 6px;
+    margin-bottom: 10px;
+}
+.card h3 {
+    font-size: 18px;
+    margin: 8px 0;
+}
+.card p {
+    font-size: 14px;
+    color: #555555;
+    margin: 4px 0;
+}
+.price {
+    font-weight: bold;
+    color: #007bff;
+}
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr; 
+    }
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Navbar</title>
+    <link rel="stylesheet" href="style10.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="logo">ShopEase</div>
+
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Categories</a></li>
+            <li><a href="#">Deals</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+
+        <div class="actions">
+            <a href="#">Cart</a>
+            <a href="#">Login</a>
+        </div>
+    </nav>
+    <section>
+        <h1>Welcome to ShopEase!</h1>
+        <p>Your one-stop destination for all shopping needs.</p>
+    </section>
+</body>
+</html>
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #222;
+    color: #fff;
+    padding: 15px 20px;
+}
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+}
+.nav-links li {
+    margin: 0 15px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+}
+.actions a {
+    margin-left: 15px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+    }
+    .actions {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 769px) and (max-width: 1024px) {
+    .nav-links a {
+        font-size: 0.9rem;
+    }
+}
+@media (min-width: 1025px) {
+    .nav-links a {
+        font-size: 1rem;
+    }
+}
+
+            
+            
+        
